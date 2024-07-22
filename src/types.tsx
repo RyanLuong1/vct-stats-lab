@@ -15,3 +15,14 @@ export type MultiSelectDropdownProps = {
       selectedOptions: string[];
       onSelectionChange: (selectedOptions: string[]) => void;
   }
+
+export type SearchBarProps = {
+    label: string;
+    nameList: string[]
+  }
+
+export type SingleSelectDropdownProps = {
+  label: string;
+  options: string[];
+  defaultOption: string;
+}

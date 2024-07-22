@@ -7,6 +7,10 @@ export const SEASONS: Option[] = [
     {"value": "2024", label: "2024"}
   ]
 
+  export const VIEWMODE: string[] = [
+    "Player", "Team"
+  ]
+
   export const STAGES: Option[] = [
     {"value": "Champions Tour 2024: Americas Kickoff", label: "Champions Tour 2024: Americas Kickoff"},
     {"value": "Champions Tour 2024: EMEA Kickoff", label: "Champions Tour 2024: EMEA Kickoff"},
