@@ -1,4 +1,5 @@
 import {Option} from "./types"
+import "../public/a"
 
 export const SEASONS: Option[] = [
     {"value": "2021", label: "2021"},
@@ -23,3 +24,30 @@ export const SEASONS: Option[] = [
     {"value": "Bind", label: "Bind"},
     {"value": "Haven", label: "Haven"}
   ]
+
+  export const AGENT_PATH: Object = {
+    "astra": "../public/agents/astra.png",
+    "breach": "../public/agents/breach.png",
+    "brimstone": "../public/agents/brimstone.png",
+    "chamber": "../public/agents/chamber.png",
+    "clove": "../public/agents/clove.png",
+    "cypher": "../public/agents/cypher.png",
+    "deadlock": "../public/agents/deadlock.png",
+    "fade": "../public/agents/fade.png",
+    "gekko": "../public/agents/gekko.png",
+    "harbor": "../public/agents/harbor.png",
+    "iso": "../public/agents/iso.png",
+    "jett": "../public/agents/jett.png",
+    "kayo": "../public/agents/kayo.png",
+    "killjoy": "../public/agents/killjoy.png",
+    "neon": "../public/agents/neon.png",
+    "omen": "../public/agents/omen.png",
+    "phoenix": "../public/agents/phoenix.png",
+    "raze": "../public/agents/raze.png",
+    "reyna": "../public/agents/reyna.png",
+    "sage": "../public/agents/sage.png",
+    "skye": "../public/agents/skye.png",
+    "sova": "../public/agents/sova.png",
+    "viper": "../public/agents/viper.png",
+    "yoru": "../public/agents/yoru.png"
+  }
