@@ -26,3 +26,21 @@ export type SingleSelectDropdownProps = {
   options: string[];
   defaultOption: string;
 }
+
+export type CustomAxisTickProps = {
+  x: number;
+  y: number;
+  payload: {
+    value: string;
+  }
+}
+
+export type Agent = {
+  img: string;
+  usage: number;
+}
+
+// export type Player = {
+//   player: string,
+//   agents: Agent[];
+// }

@@ -1,6 +1,4 @@
 import {Option} from "./types"
-import "../public/a"
-
 export const SEASONS: Option[] = [
     {"value": "2021", label: "2021"},
     {"value": "2022", label: "2022"},
@@ -25,29 +23,29 @@ export const SEASONS: Option[] = [
     {"value": "Haven", label: "Haven"}
   ]
 
-  export const AGENT_PATH: Object = {
-    "astra": "../public/agents/astra.png",
-    "breach": "../public/agents/breach.png",
-    "brimstone": "../public/agents/brimstone.png",
-    "chamber": "../public/agents/chamber.png",
-    "clove": "../public/agents/clove.png",
-    "cypher": "../public/agents/cypher.png",
-    "deadlock": "../public/agents/deadlock.png",
-    "fade": "../public/agents/fade.png",
-    "gekko": "../public/agents/gekko.png",
-    "harbor": "../public/agents/harbor.png",
-    "iso": "../public/agents/iso.png",
-    "jett": "../public/agents/jett.png",
-    "kayo": "../public/agents/kayo.png",
-    "killjoy": "../public/agents/killjoy.png",
-    "neon": "../public/agents/neon.png",
-    "omen": "../public/agents/omen.png",
-    "phoenix": "../public/agents/phoenix.png",
-    "raze": "../public/agents/raze.png",
-    "reyna": "../public/agents/reyna.png",
-    "sage": "../public/agents/sage.png",
-    "skye": "../public/agents/skye.png",
-    "sova": "../public/agents/sova.png",
-    "viper": "../public/agents/viper.png",
-    "yoru": "../public/agents/yoru.png"
+  export const AGENT_PATH: {[key: string]: string} = {
+    "astra": "/agents/astra.png",
+    "breach": "/agents/breach.png",
+    "brimstone": "/agents/brimstone.png",
+    "chamber": "/agents/chamber.png",
+    "clove": "/agents/clove.png",
+    "cypher": "/agents/cypher.png",
+    "deadlock": "/agents/deadlock.png",
+    "fade": "/agents/fade.png",
+    "gekko": "/agents/gekko.png",
+    "harbor": "/agents/harbor.png",
+    "iso": "/agents/iso.png",
+    "jett": "/agents/jett.png",
+    "kayo": "/agents/kayo.png",
+    "killjoy": "/agents/killjoy.png",
+    "neon": "/agents/neon.png",
+    "omen": "/agents/omen.png",
+    "phoenix": "/agents/phoenix.png",
+    "raze": "/agents/raze.png",
+    "reyna": "/agents/reyna.png",
+    "sage": "/agents/sage.png",
+    "skye": "/agents/skye.png",
+    "sova": "/agents/sova.png",
+    "viper": "/agents/viper.png",
+    "yoru": "/agents/yoru.png"
   }

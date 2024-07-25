@@ -5,6 +5,30 @@ import MultiSelectDropdown from "@/components/multi-select-dropdown-menu";
 import SearchBar from "@/components/search-bar";
 import SingleSelectDropdown from "@/components/single-select-dropdown-menu";
 import { SEASONS, STAGES, MAPS, VIEWMODE } from "@/constants";
+import BarGraphWithImages from "@/components/pick-rates-components/pick-rate-graph";
+import { AGENT_PATH } from "@/constants";
+
+function getAgentImagePath(agentName: string): string | undefined {
+    return AGENT_PATH[agentName as keyof typeof AGENT_PATH];
+  }
+
+const example_data = [
+    {
+        player: "supamen",
+        agents: [
+            {name: "omen", img: getAgentImagePath("omen"), usage: 300},
+            {name: "clove", img: getAgentImagePath("clove"), usage: 300},
+        ]
+    },
+    {
+        player: "Derrek",
+        agents: [
+            {name: "gekko", img: getAgentImagePath("viper"), usage: 300},
+            {name: "fade", img: getAgentImagePath("fade"), usage: 300},
+            {name: "sova", img: getAgentImagePath("sova"), usage: 300}
+        ]
+    }
+]
 
 const PickRates = () => {
     const [selectedSeasons, setSelectedSeasons] = useState<string[]>(SEASONS.map(option => option.value));
@@ -35,7 +59,7 @@ const PickRates = () => {
                     <SingleSelectDropdown label="Player or Team View" options={VIEWMODE} defaultOption="Player"/>  
                     </div> 
                 <div>
-                    
+                    <BarGraphWithImages/>
                 </div>
             </div>
         </>
