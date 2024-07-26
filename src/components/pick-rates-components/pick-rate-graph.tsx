@@ -42,10 +42,9 @@ const customTicks = () => {
 
 
 const renderCustomAxisTick = ({ x, y, payload }: CustomAxisTickProps) => {
-    console.log(payload.value)
     return (
         <g transform={`translate(${x},${y})`}>
-          <image href={payload.value} x={-20} y={0} height={40} width={40} />
+          <image href={payload.value} x={-15} y={0} height={30} width={30} />
           {/* <text x={0} y={50} textAnchor="middle" fill="#666">{payload.value}</text> */}
         </g>
     )
@@ -66,21 +65,14 @@ const renderCustomAxisTick = ({ x, y, payload }: CustomAxisTickProps) => {
 //   };
   
   const BarGraphWithImages = () => {
-    // const agentsData = example_data.flatMap(player =>
-    //     player.agents.map(agent => ({
-    //       ...agent,
-    //       player: player.player,
-    //     }))
-    //   );
-    // console.log(agentsData)
     return (
-      <ResponsiveContainer width="100%" height={500}>
-        <BarChart data={example_data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart data={example_data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }} barGap={0} barCategoryGap="0%">
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="img" tick={renderCustomAxisTick} />
+          <XAxis dataKey="img" tick={renderCustomAxisTick} interval={0} padding={{ right: 550 }}/>
           <YAxis />
           {/* <Tooltip content={<CustomTooltip />} /> */}
-          <Bar dataKey="usage" />
+          <Bar dataKey="usage" barSize={40} />
         </BarChart>
       </ResponsiveContainer>
     );
